@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="JustinSolo.AppHost/JustinSolo.AppHost.csproj" />
+  <Project Path="JustinSolo.ServiceDefaults/JustinSolo.ServiceDefaults.csproj" />
+  <Project Path="JustinSolo/JustinSolo.csproj" />
+</Solution>

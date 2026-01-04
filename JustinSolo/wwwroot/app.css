@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Lilex';
+    src: url('/fonts/Lilex-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lilex';
+    src: url('/fonts/Lilex-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'Lilex', monospace, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    color: #1a1a1a;
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Base line height for readability */
+}
+
+h1, p {
+    margin: 0;
+}
+
+p {
+    font-family: 'Lilex', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 3rem; /* 48px - follows 1.5x scale from base 16px */
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.1; /* Tighter for large headings */
+    margin-bottom: 0.5rem; /* 8px - consistent spacing unit */
+    letter-spacing: -0.02em; /* Slight negative tracking for large text */
+}
+
+p.role {
+    font-size: 1.125rem; /* 18px - follows type scale */
+    color: #4a4a4a;
+    line-height: 1.4;
+    letter-spacing: 0.05em; /* Looser tracking for uppercase */
+    text-transform: uppercase;
+    margin-bottom: 0.75rem; /* 12px - creates visual hierarchy */
+}
+
+p.location {
+    font-size: 1rem; /* 16px - same as base for balance */
+    color: #888888;
+    line-height: 1.5;
+}
+
+p.bio {
+    font-size: 1rem; /* 16px - base size for body text */
+    color: #4a4a4a;
+    line-height: 1.6; /* More relaxed for paragraph readability */
+    margin-top: 1.5rem; /* 24px - creates clear separation from location */
+    max-width: 550px; /* Optimal line length for readability (50-75 chars) */
+}
+
+.contact-section {
+    display: flex; /* Keep as flex to fill width */
+    align-items: center;
+    gap: 0.75rem; /* Tighter spacing: 12px */
+    margin-top: 2rem;
+    padding: 0.75rem 1rem; /* More compact padding: 12px 16px */
+    background-color: #f5f5f5; /* Lighter, subtler gray */
+    border-radius: 5px; /* Full pill-shaped container */
+}
+
+.contact-label {
+    font-size: 0.9375rem; /* 15px - slightly smaller */
+    color: #666666; /* Softer gray */
+    font-weight: 400;
+}
+
+.contact-pill {
+    display: inline-block;
+    padding: 0.5rem 1.25rem; /* Compact: 8px 20px */
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    letter-spacing: 0.02em;
+    margin-left: auto; /* Pushes button to the right side */
+}
+
+    .contact-pill:hover {
+        background-color: #1a1a1a;
+        transform: translateY(-1px);
+    }
+
+    .contact-pill:active {
+        transform: translateY(0);
+    }
